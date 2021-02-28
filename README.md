@@ -12,4 +12,4 @@ You will receive in output all the possible positions of Mister X.
 
 Example:
 Input: `1 ? m`
-Output: `from 1 with black ticket to [8, 9, 58, 46] and metro ticket to `
+Output: `[8, 9, 58, 46] [1, 13, 74, 79]`

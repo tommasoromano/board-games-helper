@@ -5,4 +5,6 @@ Copy-paste the code you want to use in [repl.it](https://repl.it/languages/go) a
 # Scotland Yard Helper
 ### Where's Mister X?
 Predict the position of Mister X from a known point and an arbitrary number of tickets among taxi, bus, metro, black.
-Use 
+Use 'point ticket1 ticket2 ...' where *point* is the last number where Mister X was seen; *ticket* is a char among taxi (t), bus (b), metro (m), black (?) that Mister X used from the last number.
+You will receive in output all the possible positions of Mister X.
+Example:

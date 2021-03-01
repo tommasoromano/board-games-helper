@@ -11,7 +11,7 @@ Use `point ticket1 ticket2 ...` where **point** is the last number where Mister 
 You will receive all the possible positions of Mister X.
 
 Example1:
-Input: `1 ? m`
-Output: `[8, 9, 58, 46] [1, 13, 74, 79]`
-This means that from **position 1** and after using **black ticket, metro ticket**, Mister X could be in positions **[1, 13, 74, 79]**. No other position is possible.
+Input: `1 ? m`.
+Output: `[8, 9, 58, 46] [1, 13, 74, 79]`.
+This means that from **position 1** and after **black ticket, metro ticket**, Mister X could be in positions **[1, 13, 74, 79]**. No other position is possible.
 ![Example1](https://github.com/tommasoromano/board-games-helper/blob/main/scotlandYard0.png)

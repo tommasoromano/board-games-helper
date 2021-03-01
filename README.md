@@ -10,6 +10,7 @@ Use `point ticket1 ticket2 ...` where *point* is the last number where Mister X 
 
 You will receive in output all the possible positions of Mister X.
 
-Example:
+Example1:
 Input: `1 ? m`
 Output: `[8, 9, 58, 46] [1, 13, 74, 79]`
+![Example1]()

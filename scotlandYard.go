@@ -47,17 +47,27 @@ var m = syMap{
 		{[]int{0,0,0}, 			[]int{14,38,39}},
 		{[]int{0,0,0}, 			[]int{15,39,27}},
 		{[]int{0,0,0}, 			[]int{26,40,28}},
+		{[]int{0,0,0,0}, 		[]int{15,16,27,41}},
 		{[]int{0,0,0,3,3,1,1}, 	[]int{6,17,16,41,42,55,15}},
 		{[]int{0,0}, 			[]int{17,42}},						//30
+		{[]int{0,0,0}, 			[]int{18,43,44}},
+		{[]int{0,0,0,0}, 		[]int{19,45,33,44}},
+		{[]int{0,0,0,0}, 		[]int{20,21,46,32}},
+		{[]int{0,0,0,1,3}, 		[]int{10,47,48,46,22}},
+		{[]int{0,0,0}, 			[]int{22,48,65,36}},
+		{[]int{0,0,0}, 			[]int{35,49,37}},
+		{[]int{0,0,0,0}, 		[]int{50,23,24,36}},
+		{[]int{0,0,0,0}, 		[]int{50,34,51,25}},
+		{[]int{0,0,0,0}, 		[]int{25,51,26,52}},
+		{[]int{0,0,0,0}, 		[]int{27,52,53,41}},				//40
 	},
 }
+// return a list of nodes that are near the input nodes and the ticket used
 func calcNextNodes(ticket string, nodes []int)(newNodes []int) {
 	newNodes = make([]int, 0)
-	fmt.Println(nodes)
 	// loop for input nodes to check
 	for i:=0;i<len(nodes);i++{
 		// loop for next on map for node[i]
-		//fmt.Print(len(m.nodes[nodes[i]-1].ticket))
 		for j:=0;j<len(m.nodes[nodes[i]-1].ticket);j++{
 			// divide for ticket
 			hasNext:=false
@@ -98,6 +108,7 @@ func calcNextNodes(ticket string, nodes []int)(newNodes []int) {
 	fmt.Print(newNodes)
 	return newNodes
 }
+// check if a node is already in a node list
 func isInNodes(i int, n []int)(bool) {
 	for j:=0;j<len(n);j++{
 		if n[j]==i {
@@ -116,5 +127,4 @@ func main() {
 	for i:=1;i<len(wrds);i++ {
 		finalNodes=calcNextNodes(wrds[i],finalNodes)
 	}
-	fmt.Print(finalNodes)
 }

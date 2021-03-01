@@ -13,4 +13,4 @@ You will receive in output all the possible positions of Mister X.
 Example1:
 Input: `1 ? m`
 Output: `[8, 9, 58, 46] [1, 13, 74, 79]`
-![Example1]()
+![Example1](https://github.com/tommasoromano/board-games-helper/blob/main/scotlandYard0.png)
